@@ -1,18 +1,20 @@
 <template>
   <div id="app">
     <main_navigation></main_navigation>
+    <rodo_banner></rodo_banner>
     <router-view/>
   </div>
 </template>
 
 <script>
 import main_navigation from './components/main_navigation.vue';
+import rodo_banner from './components/rodo_banner.vue';
 
 export default {
   name: 'App',
   components:{
     main_navigation,
-    
+    rodo_banner
   }
 }
 </script>
