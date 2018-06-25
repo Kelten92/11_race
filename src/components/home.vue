@@ -1,15 +1,6 @@
 <template>
   <header class="hello grid-wrapper">
-    <nav role="navigation" class="hello-nav">
-      <ul class="hello-nav-list">
-        <i class="list-icon fas fa-bars" v-on:click="changeMenu"></i>
-        <li class="list-item" v-bind:class="{ active: isActive }"><a href="#">Home</a></li>
-        <li class="list-item" v-bind:class="{ active: isActive }"><a href="#">About</a></li>
-        <li class="list-item" v-bind:class="{ active: isActive }"><a href="#">Login</a></li>
-        <li class="list-item" v-bind:class="{ active: isActive }"><a href="#">Register</a></li>
-        <li class="list-item" v-bind:class="{ active: isActive }"><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <navigation></navigation>
     <div class="hello-text">
       <h1 class="hello-title"><img src="../assets/logo11.png"></h1>
     </div>
@@ -24,9 +15,10 @@
 
 <script>
 import countdown from './countdown.vue'
+import navigation from './navigation.vue';
 
 export default {
-  name: 'HelloWorld',
+  name: 'home',
   data () {
     return {
       showMenu: false,
@@ -44,7 +36,8 @@ export default {
     }
   },
   components:{
-    countdown
+    countdown,
+    navigation
   }
   
 }
