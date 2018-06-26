@@ -57,15 +57,7 @@
   font-size:28px;
   color:#aed434;
 }
-.hello-text{
-  text-align: center;
-  margin:4%;
-  margin-bottom: 2%;
-}
-.hello-title{
-  display: inline;
-  margin:0;
-}
+
 
 @media (min-width: 600px){
   .list-item{
@@ -79,10 +71,7 @@
     grid-column: 4 / 5;
     grid-row: 1;
   }
-  .hello-text{
-    grid-column: 2 / 3;
-    grid-row: 1;
-  }
+  
 
 }
 </style>

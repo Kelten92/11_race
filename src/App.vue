@@ -1,22 +1,17 @@
 <template>
   <div id="app">
-    <home></home>
-    <rodo_banner></rodo_banner>
     <router-view/>
+    <rodo_banner></rodo_banner>
   </div>
 </template>
 
 <script>
-import home from './components/home.vue';
 import rodo_banner from './components/rodo_banner.vue';
-
 
 export default {
   name: 'App',
   components:{
-    home,
     rodo_banner,
-    
   }
 }
 </script>

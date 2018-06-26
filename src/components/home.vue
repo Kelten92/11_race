@@ -19,27 +19,11 @@ import navigation from './navigation.vue';
 
 export default {
   name: 'home',
-  data () {
-    return {
-      showMenu: false,
-      isActive: false,
-    }
-  },
-  methods: {
-    changeMenu: function() {
-      if(this.isActive==true){
-        this.isActive=false
-      }
-      else{
-        this.isActive=true
-      }
-    }
-  },
+  
   components:{
     countdown,
     navigation
-  }
-  
+  },
 }
 </script>
 
@@ -72,20 +56,6 @@ export default {
   z-index: 1;
   top:35%;
 }
-.list-item.active{
-  display:block;
-}
-.list-icon{
-  font-size:28px;
-  color:#aed434;
-}
-button{
-  text-align: center;
-  display: inline;
-}
-h1 span{
-  color:#aed434;
-}
 .hello{
   padding-top: 2%;
   background: radial-gradient(ellipse at center, #37393d 0%,#16171a 100%);
@@ -100,59 +70,13 @@ h1 span{
   display: inline;
   margin:0;
 }
-.hello-nav{
-  position: relative;
-  margin:4%;
-  overflow: hidden;
-  z-index: 2;
-}
-.hello-nav-list{
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-size: 18px;
-}
-.list-item{
-  list-style: none;
-  display: none;
-  padding:2%;
-  text-transform: uppercase;
-}
-.list-item a{
-  color:#aed434;
-  text-decoration: none;
-  display: inline-block;
-}
-.list-item a::after{
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #aed434;
-  transition: width .4s;
-}
-.list-item a:hover::after{
-  width: 100%;
-  transition: width .4s;
-}
 
 @media (min-width: 600px){
-  .list-item{
-    display: inline-block;
-  }
-  .list-icon{
-    display: none;
-  }
   .grid-wrapper{
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 3fr 1fr;
     grid-template-rows: 1fr 1fr 3fr 1fr;
     grid-gap: 20px;
-  }
-  .hello-nav{
-    margin-top:0;
-    grid-column: 4 / 5;
-    grid-row: 1;
   }
   .hello-text{
     grid-column: 2 / 3;
@@ -171,5 +95,4 @@ h1 span{
     text-align: left;
   }
 }
-
 </style>
